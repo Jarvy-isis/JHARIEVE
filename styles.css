@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    text-decoration: none;
+}
+
+#topBtn:hover {
+    background-color: gray;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #003139;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+ul li a {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: #089494;
+    transform: translateY(-3px); 
+}
+
+ul li a.active {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 217, 0);
+    text-underline-offset: 20px;
+    text-decoration-thickness: 4px;
+    transform: translateY(-3px);
+}
+
+#universe {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#dark {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f4f4f4;
+    padding: 10px;
+}
+
+article header, section {
+    padding: 15px;
+    background: #ccc;
+    text-align: center;
+}
+
+aside {
+    background: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
