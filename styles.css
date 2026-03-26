@@ -24,15 +24,6 @@ body {
 }
 
 @media (min-width: 576px) {
-    ul li a {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
-  nav {
-    grid-column: col-start / span 12;
-  }
-
   .content {
     grid-column: col-start / span 9;
   }
@@ -47,11 +38,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
-  nav {
-    grid-column: col-start / span 12;
-  }
-
   .content {
     grid-column: col-start / span 9;
   }
@@ -93,7 +79,6 @@ ul {
     background-color: #003139;
     display: flex;
     justify-content: center;
-
 }
 
 ul li a {
