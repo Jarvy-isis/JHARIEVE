@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 5px;
+    flex: 1;
+}
+
+.dropdown-menu {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-menu:hover {
+  background-color: #3e8e41;
+}
+
+.container > * {
+    padding: 10px;
+    grid-column: col-start / span 12;
+}
+
+@media (min-width: 576px) {
+    .container > * {
+        padding: 5px;
+    }
+    ul li a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    .content {
+    grid-column: col-start / span 12;
+    padding: 5px;
+  }
+
+    .footer {
+    grid-column: col-start / span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-column: col-start / span 12;
+  }
+
+  .footer {
+    grid-column: col-start / span 12;
+  }
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    text-decoration: none;
+}
+
+#topBtn:hover {
+    background-color: gray;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #003139;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: #089494;
+    transform: translateY(-3px); 
+}
+
+ul li a.active {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 217, 0);
+    text-underline-offset: 20px;
+    text-decoration-thickness: 4px;
+    transform: translateY(-3px);
+}
+
+.header {
+    color: white;
+    padding: 15px;
+    background: rgb(10, 10, 10);
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    padding: 10px 10%;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+}
+
+.item1 {
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: beige;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item2 {
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: beige;
+    justify-content: center;
+}
+
+.card-container {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+	max-width: 1200px;
+    margin: auto;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
