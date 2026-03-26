@@ -23,7 +23,10 @@ body {
 }
 
 @media (min-width: 576px) {
-
+    ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
   nav {
     grid-column: col-start / span 12;
   }
