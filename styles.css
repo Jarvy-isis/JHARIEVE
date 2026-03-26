@@ -121,17 +121,26 @@ article {
     padding: 10px;
 }
 
-article header, section {
+article header {
+    color: white;
     padding: 15px;
-    background: beige;
+    background: rgb(10, 10, 10);
     text-align: center;
 }
 
+section {
+    border: 1px solid green;
+    padding: 15px;
+    background-color: beige;
+    justify-content: center;
+}
+
 aside {
-    background: beige;
-    padding: 20px;
+    border: 1px solid rgb(0, 26, 56);
+    background: rgb(173, 173, 173);
+    padding: 30px;
     margin-bottom: 10px;
-    text-align: center;
+    justify-content: center;
 }
 
 .footer {
