@@ -188,7 +188,7 @@ function handleAnswer(e) {
   } else {
     showPopup("Wrong ❌");
   }
-  setTimeout(nextQuestion, 1000); // Next question after 1 sec
+  setTimeout(nextQuestion, 1000);
 }
 
 correctBtn.addEventListener("click", handleAnswer);
